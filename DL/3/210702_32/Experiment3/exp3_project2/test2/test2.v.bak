@@ -1,0 +1,6 @@
+module test2(in_a,in_b,in_c,in_d,LDN,ENP,ENT,CLRN,a,b,c,d,e,f,g,sel,rst,clk);
+input in_a,in_b,in_c,in_d,LDN,ENP,ENT,CLRN,rst,clk;
+output a,b,c,d,e,f,g,sel;
+frequency_divider();
+counter_led();
+endmodule
