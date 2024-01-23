@@ -1,0 +1,9 @@
+module vote1(A,B,C,D,Y);
+input A,B,C,D;
+output Y;
+and(abd,A,B,D);
+and(abc,,A,B,C);
+and(bcd,B,C,D);
+and(acd,A,C,D);
+or(Y,abd,abc,bcd,acd);
+endmodule

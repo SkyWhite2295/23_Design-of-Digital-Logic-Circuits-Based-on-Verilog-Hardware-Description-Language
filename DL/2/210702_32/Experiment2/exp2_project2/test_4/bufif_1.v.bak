@@ -1,0 +1,11 @@
+module bufif_1(en,in,out);
+input en;
+input [3:0]in;
+output [3:0]out;
+reg [3:0]out;
+always @ (en,in)
+begin
+if(en) out<=in;
+else out=4'bz;
+end
+endmodule

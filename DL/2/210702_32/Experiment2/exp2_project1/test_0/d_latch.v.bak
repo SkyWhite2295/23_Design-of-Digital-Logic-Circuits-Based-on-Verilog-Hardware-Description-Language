@@ -1,0 +1,8 @@
+module d_latch(clk,d,q,qn);
+	input   clk,d;
+	output  q,qn;
+	wire    r,s;
+	and and1  (s,d,clk);
+	and and2  (r,~d,clk);
+	RS_latch rs (s,r,q,qn);//RS锁存器中的所展示的门级描述
+endmodule
